@@ -67,6 +67,7 @@ func (li LocalIglu) addApiKeyToConfig() error {
 }
 
 func (li LocalIglu) insertApiKeyToDb() error {
+
 	db := pg.Connect(&pg.Options{
 		User:     li.Psql.User,
 		Password: li.Psql.Password,
